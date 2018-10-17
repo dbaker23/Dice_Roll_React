@@ -12,3 +12,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.App {
+  text-align: center;
+}
+
+.roll-button {
+  border: 1px dashed;
+}
+
+.roll-button button {
+  width: 50%;
+  margin: 10px 10px 10px 10px;
+  height: 50px;
+  font-size: 22pt;
+}
