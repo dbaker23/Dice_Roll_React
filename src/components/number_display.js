@@ -1,17 +1,18 @@
 import React from 'react';
 
 const NumberDisplay = ({gameState}) => {  
-    
-    
-
-    return <p>{randomRoll(gameState)}</p>    
+    return randomRoll(gameState);
 };
 
 const randomRoll = (gameState) => {
     if( gameState === 1 ) {
-        return 'Roll to play';
+        return <p>Roll to play</p>;
     } else {
-        return Math.floor( Math.random() * 6 ) + 1; 
+        return (
+            <div>
+                <p>{Math.floor( Math.random() * 6 ) + 1}</p>                
+            </div>
+        ); 
     }
 }
 

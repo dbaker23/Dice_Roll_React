@@ -15,22 +15,16 @@ class App extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick( e ) {
+  handleClick( e ) {        
     this.setState({
-      gameState: 2
+      gameState: 2      
     });
-  }
-
-  getGameState() {
-    if( this.state.gameState != 1 ) {      
-      this.setState.buttonText = 'Play again?';
-    }
   }
 
   render() {
     return (
       <div className="App">
-        <RollButton handleClick= { this.handleClick } buttonText={ this.state.buttonText }/>
+        <RollButton handleClick={ this.handleClick } buttonText={ this.state.buttonText }/>
         <NumberDisplay gameState={ this.state.gameState } />
       </div>
     );
