@@ -5,7 +5,7 @@ export class RollButton extends Component {
         return (
             <div className="roll-button">
                 <button onClick={this.props.handleClick}>
-                {this.props.buttonText}
+                    {this.props.buttonText}
                 </button>
             </div>
         );
