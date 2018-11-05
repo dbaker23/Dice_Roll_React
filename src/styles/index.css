@@ -22,6 +22,10 @@ p {
   color: #000000;
 }
 
+p span {
+  margin: 0 10px;
+}
+
 .roll-button {
   border: 1px dashed;
 }
